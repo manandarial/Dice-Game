@@ -1,0 +1,96 @@
+html, body {
+    --color-1: #a8e6cf;
+    --color-2: #dcedc1;
+    --color-3: #ffd3b6;
+    --color-4: #ffaaa5;
+    --color-5: #ff8b94;
+    --scoreboard-color: #FE0550;
+    --background-color: #001222;
+    --button-primary: #001222;
+    --container-color: #00203D;
+    
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 200px;
+    background-color: var(--background-color);
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: var(--container-color);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+    padding: 50px;
+    border-radius: 10px;
+    /* min-height: 50vh; */
+}
+
+.players {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dice {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: var(--scoreboard-color);
+    margin: 0 auto;
+    font-size: 80px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+
+button {
+    color: #fff;
+    padding: 20px 30px;
+    font-size: 20px;
+    margin: 40px auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#rollBtn {
+    background-color: var(--button-primary);
+    transition: all 0.2s ease-in-out;
+    padding: 20px 100px;
+}
+
+#rollBtn:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    font-size: 22px;
+}
+
+#resetBtn {
+    border: 2px solid white;
+    background-color: var(--container-color);
+    transition: all 0.2s ease-in-out;
+    padding: 20px 98px;
+}
+#resetBtn:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    font-size: 22px;
+}
+
+button:focus {
+    outline: none;
+}
+
+#resetBtn {
+    display: none;
+}
+
+.active {
+    box-shadow: rgba(255, 47, 0, 0.25) 0px 54px 55px, rgba(255, 47, 0, 0.12) 0px -12px 30px, rgba(255, 47, 0, 0.12) 0px 4px 6px, rgba(255, 47, 0, 0.17) 0px 12px 13px, rgba(255, 47, 0, 0.09) 0px -3px 5px;
+}
